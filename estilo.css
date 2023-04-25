@@ -1,0 +1,142 @@
+/* 
+// sale error
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+
+body {
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background-color: rgb(13, 0, 66);
+    color: black;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / 5;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-size: 2rem;
+    font-family: monospace;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    overflow: auto;
+}
+
+.btn {
+    background-color: rgb(15, 15, 110) !important;
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    width: 5rem;
+    height:5rem;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+.btn:active {
+    background-color: rgb(0, 0, 106);
+    transform: scale(0.9);
+}
+
+.cero {
+    grid-column: 1 / 3;
+    background-color: rgb(15, 15, 110);
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    width: 100%;
+}
+.cero:hover {
+    background-color: darkblue;
+}
+.cero:active {
+    background-color: rgb(0, 0, 106);
+    transform: scale(0.9);
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: rgb(190, 79, 0);
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#igual:hover {
+    background-color: rgb(226, 75, 0);
+}
+#igual:active {
+    background-color: rgb(120, 51, 2);
+    transform: scale(0.95);
+}
+
+#borrar {
+    background-color: rgb(190, 79, 0);
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#borrar:hover {
+    background-color: rgb(226, 75, 0);
+}
+#borrar:active {
+    background-color: rgb(120, 51, 2);
+    transform: scale(0.9);
+}
+
+#c {
+    background-color: rgb(131, 0, 0);
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#c:hover {
+    background-color: rgb(223, 0, 0)
+}
+#c:active {
+    background-color: rgb(72, 0, 0);
+    transform: scale(0.9);
+}
